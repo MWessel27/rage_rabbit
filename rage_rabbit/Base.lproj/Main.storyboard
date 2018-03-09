@@ -26,7 +26,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PK-jB-CL8" userLabel="listBtn">
                                         <rect key="frame" x="0.0" y="0.0" width="90.5" height="102"/>
-                                        <state key="normal" image="list-icon"/>
+                                        <state key="normal" image="list"/>
                                         <connections>
                                             <segue destination="Z84-SP-CQk" kind="show" id="3Bt-zF-Tgh"/>
                                         </connections>
@@ -86,7 +86,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvP-L6-6by" userLabel="listBtn">
                                         <rect key="frame" x="0.0" y="0.0" width="90.5" height="102"/>
-                                        <state key="normal" image="list-icon"/>
+                                        <state key="normal" image="list"/>
                                         <connections>
                                             <segue destination="Z84-SP-CQk" kind="show" id="Tfz-ap-zQF"/>
                                         </connections>
@@ -234,12 +234,12 @@
         <image name="daily" width="77" height="74"/>
         <image name="daily-select" width="90" height="102"/>
         <image name="home" width="375" height="811"/>
-        <image name="list-icon" width="77" height="74"/>
+        <image name="list" width="77" height="74"/>
         <image name="list-select" width="90" height="102"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tfz-ap-zQF"/>
-        <segue reference="iAA-zH-bFj"/>
-        <segue reference="72G-Ts-Usv"/>
+        <segue reference="3Bt-zF-Tgh"/>
+        <segue reference="RkT-lV-77m"/>
+        <segue reference="eBV-OC-xmm"/>
     </inferredMetricsTieBreakers>
 </document>
