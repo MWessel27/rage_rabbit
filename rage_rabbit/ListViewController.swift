@@ -24,20 +24,23 @@ class ListViewController: UIViewController, UITableViewDataSource {
         if(products.count == 0){
             prodTbl.isHidden = true;
         }
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func btnClick(_ sender: Any) {
-        let prodName = self.inptBox.text;
-        products.append(prodName!);
-        
-        prodTbl.beginUpdates();
-        prodTbl.insertRows(at: [
-            NSIndexPath(row: products.count-1, section: 0) as IndexPath
-            ], with: .automatic);
-        prodTbl.endUpdates();
-        prodTbl.isHidden = false;
-        self.inptBox.text = "";
+        if(self.inptBox.text?.isEmpty == false) {
+            let prodName = self.inptBox.text;
+            products.append(prodName!);
+            
+            prodTbl.beginUpdates();
+            prodTbl.insertRows(at: [
+                NSIndexPath(row: products.count-1, section: 0) as IndexPath
+                ], with: .automatic);
+            prodTbl.endUpdates();
+            prodTbl.isHidden = false;
+            self.inptBox.text = "";
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
