@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB59D23A205316B100921038 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59D239205316B100921038 /* Default-568h@2x.png */; };
 		CB672AD72052D2E80035D5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB672AD62052D2E80035D5C6 /* AppDelegate.swift */; };
 		CB672AD92052D2E80035D5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB672AD82052D2E80035D5C6 /* ViewController.swift */; };
 		CB672ADC2052D2E80035D5C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB672ADA2052D2E80035D5C6 /* Main.storyboard */; };
-		CB672ADF2052D2E80035D5C6 /* test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB672ADD2052D2E80035D5C6 /* test.xcdatamodeld */; };
+		CB672ADF2052D2E80035D5C6 /* rage_rabbit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB672ADD2052D2E80035D5C6 /* rage_rabbit.xcdatamodeld */; };
 		CB672AE12052D2E80035D5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB672AE02052D2E80035D5C6 /* Assets.xcassets */; };
 		CB672AE42052D2E80035D5C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB672AE22052D2E80035D5C6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB672AD32052D2E80035D5C6 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB59D239205316B100921038 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CB672AD32052D2E80035D5C6 /* rage_rabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rage_rabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB672AD62052D2E80035D5C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB672AD82052D2E80035D5C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB672ADB2052D2E80035D5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB672ADE2052D2E80035D5C6 /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
+		CB672ADE2052D2E80035D5C6 /* rage_rabbit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rage_rabbit.xcdatamodel; sourceTree = "<group>"; };
 		CB672AE02052D2E80035D5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB672AE32052D2E80035D5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB672AE52052D2E80035D5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +42,8 @@
 		CB672ACA2052D2E80035D5C6 = {
 			isa = PBXGroup;
 			children = (
-				CB672AD52052D2E80035D5C6 /* test */,
+				CB59D239205316B100921038 /* Default-568h@2x.png */,
+				CB672AD52052D2E80035D5C6 /* rage_rabbit */,
 				CB672AD42052D2E80035D5C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +51,12 @@
 		CB672AD42052D2E80035D5C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB672AD32052D2E80035D5C6 /* test.app */,
+				CB672AD32052D2E80035D5C6 /* rage_rabbit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB672AD52052D2E80035D5C6 /* test */ = {
+		CB672AD52052D2E80035D5C6 /* rage_rabbit */ = {
 			isa = PBXGroup;
 			children = (
 				CB672AD62052D2E80035D5C6 /* AppDelegate.swift */,
@@ -62,17 +65,17 @@
 				CB672AE02052D2E80035D5C6 /* Assets.xcassets */,
 				CB672AE22052D2E80035D5C6 /* LaunchScreen.storyboard */,
 				CB672AE52052D2E80035D5C6 /* Info.plist */,
-				CB672ADD2052D2E80035D5C6 /* test.xcdatamodeld */,
+				CB672ADD2052D2E80035D5C6 /* rage_rabbit.xcdatamodeld */,
 			);
-			path = test;
+			path = rage_rabbit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB672AD22052D2E80035D5C6 /* test */ = {
+		CB672AD22052D2E80035D5C6 /* rage_rabbit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB672AE82052D2E80035D5C6 /* Build configuration list for PBXNativeTarget "test" */;
+			buildConfigurationList = CB672AE82052D2E80035D5C6 /* Build configuration list for PBXNativeTarget "rage_rabbit" */;
 			buildPhases = (
 				CB672ACF2052D2E80035D5C6 /* Sources */,
 				CB672AD02052D2E80035D5C6 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = test;
+			name = rage_rabbit;
 			productName = test;
-			productReference = CB672AD32052D2E80035D5C6 /* test.app */;
+			productReference = CB672AD32052D2E80035D5C6 /* rage_rabbit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB672ACE2052D2E80035D5C6 /* Build configuration list for PBXProject "test" */;
+			buildConfigurationList = CB672ACE2052D2E80035D5C6 /* Build configuration list for PBXProject "rage_rabbit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB672AD22052D2E80035D5C6 /* test */,
+				CB672AD22052D2E80035D5C6 /* rage_rabbit */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB672AE42052D2E80035D5C6 /* LaunchScreen.storyboard in Resources */,
+				CB59D23A205316B100921038 /* Default-568h@2x.png in Resources */,
 				CB672AE12052D2E80035D5C6 /* Assets.xcassets in Resources */,
 				CB672ADC2052D2E80035D5C6 /* Main.storyboard in Resources */,
 			);
@@ -141,7 +145,7 @@
 			files = (
 				CB672AD92052D2E80035D5C6 /* ViewController.swift in Sources */,
 				CB672AD72052D2E80035D5C6 /* AppDelegate.swift in Sources */,
-				CB672ADF2052D2E80035D5C6 /* test.xcdatamodeld in Sources */,
+				CB672ADF2052D2E80035D5C6 /* rage_rabbit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_FILE = rage_rabbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.perservere.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_FILE = rage_rabbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.perservere.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB672ACE2052D2E80035D5C6 /* Build configuration list for PBXProject "test" */ = {
+		CB672ACE2052D2E80035D5C6 /* Build configuration list for PBXProject "rage_rabbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB672AE62052D2E80035D5C6 /* Debug */,
@@ -314,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB672AE82052D2E80035D5C6 /* Build configuration list for PBXNativeTarget "test" */ = {
+		CB672AE82052D2E80035D5C6 /* Build configuration list for PBXNativeTarget "rage_rabbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB672AE92052D2E80035D5C6 /* Debug */,
@@ -326,13 +330,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CB672ADD2052D2E80035D5C6 /* test.xcdatamodeld */ = {
+		CB672ADD2052D2E80035D5C6 /* rage_rabbit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CB672ADE2052D2E80035D5C6 /* test.xcdatamodel */,
+				CB672ADE2052D2E80035D5C6 /* rage_rabbit.xcdatamodel */,
 			);
-			currentVersion = CB672ADE2052D2E80035D5C6 /* test.xcdatamodel */;
-			path = test.xcdatamodeld;
+			currentVersion = CB672ADE2052D2E80035D5C6 /* rage_rabbit.xcdatamodel */;
+			path = rage_rabbit.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
