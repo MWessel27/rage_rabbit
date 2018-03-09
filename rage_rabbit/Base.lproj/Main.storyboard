@@ -170,31 +170,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qop-I4-L6m">
-                                <rect key="frame" x="67" y="259" width="240" height="379"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="8co-Ai-ofN">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8co-Ai-ofN" id="fV4-Lj-lfd">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POD-SV-KPU" userLabel="inptBox">
-                                <rect key="frame" x="67" y="205" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POD-SV-KPU" userLabel="inptBox">
+                                <rect key="frame" x="100" y="188" width="175" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-Kk-EtM">
-                                <rect key="frame" x="259" y="205" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-Kk-EtM">
+                                <rect key="frame" x="169" y="219" width="37" height="30"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -202,17 +185,43 @@
                                     <action selector="btnClick:" destination="Z84-SP-CQk" eventType="touchUpInside" id="gzo-93-Ndo"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qop-I4-L6m">
+                                <rect key="frame" x="25" y="278" width="325" height="369"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="8co-Ai-ofN">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8co-Ai-ofN" id="fV4-Lj-lfd">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Qop-I4-L6m" firstAttribute="top" secondItem="7aL-Kk-EtM" secondAttribute="bottom" constant="29" id="3e7-pC-c45"/>
+                            <constraint firstItem="S2g-n2-JFu" firstAttribute="trailing" secondItem="Qop-I4-L6m" secondAttribute="trailing" constant="25" id="BTu-dp-XaO"/>
+                            <constraint firstItem="7aL-Kk-EtM" firstAttribute="top" secondItem="POD-SV-KPU" secondAttribute="bottom" constant="1" id="Cin-Jb-qSR"/>
                             <constraint firstItem="Ez0-jx-gb7" firstAttribute="bottom" secondItem="S2g-n2-JFu" secondAttribute="bottom" id="CrV-mx-aP5"/>
                             <constraint firstItem="Ez0-jx-gb7" firstAttribute="top" secondItem="ZUb-EV-EbU" secondAttribute="top" id="Gcs-yU-AOR"/>
+                            <constraint firstItem="7aL-Kk-EtM" firstAttribute="top" secondItem="POD-SV-KPU" secondAttribute="bottom" constant="1" id="GhD-3q-QOu"/>
+                            <constraint firstItem="Qop-I4-L6m" firstAttribute="leading" secondItem="S2g-n2-JFu" secondAttribute="leading" constant="25" id="OLw-ZG-k40"/>
                             <constraint firstItem="S2g-n2-JFu" firstAttribute="trailing" secondItem="h5i-K7-h7n" secondAttribute="trailing" constant="12" id="S71-te-O36"/>
                             <constraint firstItem="OSe-dT-TYc" firstAttribute="centerX" secondItem="ZUb-EV-EbU" secondAttribute="centerX" id="VZn-0O-sjX"/>
                             <constraint firstItem="h5i-K7-h7n" firstAttribute="leading" secondItem="S2g-n2-JFu" secondAttribute="leading" constant="12" id="ZUD-7e-1P5"/>
+                            <constraint firstItem="POD-SV-KPU" firstAttribute="top" secondItem="OSe-dT-TYc" secondAttribute="bottom" constant="22" id="dOa-8d-aQG"/>
+                            <constraint firstItem="7aL-Kk-EtM" firstAttribute="leading" secondItem="S2g-n2-JFu" secondAttribute="leading" constant="169" id="e0N-4M-rVS"/>
+                            <constraint firstItem="S2g-n2-JFu" firstAttribute="bottom" secondItem="Qop-I4-L6m" secondAttribute="bottom" constant="20" id="eyd-dt-38b"/>
                             <constraint firstItem="OSe-dT-TYc" firstAttribute="top" secondItem="h5i-K7-h7n" secondAttribute="bottom" constant="2" id="hCE-89-ffX"/>
                             <constraint firstItem="Ez0-jx-gb7" firstAttribute="trailing" secondItem="S2g-n2-JFu" secondAttribute="trailing" id="kds-zd-jn1"/>
+                            <constraint firstItem="S2g-n2-JFu" firstAttribute="trailing" secondItem="POD-SV-KPU" secondAttribute="trailing" constant="100" id="mdU-vu-ltQ"/>
                             <constraint firstItem="Ez0-jx-gb7" firstAttribute="leading" secondItem="S2g-n2-JFu" secondAttribute="leading" id="mxO-17-dMd"/>
+                            <constraint firstItem="Qop-I4-L6m" firstAttribute="top" secondItem="7aL-Kk-EtM" secondAttribute="bottom" constant="29" id="qB8-Ug-A31"/>
+                            <constraint firstItem="POD-SV-KPU" firstAttribute="leading" secondItem="S2g-n2-JFu" secondAttribute="leading" constant="100" id="smd-nw-lbO"/>
+                            <constraint firstItem="S2g-n2-JFu" firstAttribute="trailing" secondItem="7aL-Kk-EtM" secondAttribute="trailing" constant="169" id="xHa-Qt-X7S"/>
                             <constraint firstItem="h5i-K7-h7n" firstAttribute="top" secondItem="S2g-n2-JFu" secondAttribute="top" id="xOl-ld-yiJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S2g-n2-JFu"/>
@@ -239,7 +248,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Bt-zF-Tgh"/>
-        <segue reference="RkT-lV-77m"/>
-        <segue reference="eBV-OC-xmm"/>
+        <segue reference="iAA-zH-bFj"/>
+        <segue reference="72G-Ts-Usv"/>
     </inferredMetricsTieBreakers>
 </document>
