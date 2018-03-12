@@ -113,6 +113,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-LZ-Mot" customClass="FSCalendar">
                                 <rect key="frame" x="20" y="203" width="374" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="0.048447482287883759" green="0.59181517362594604" blue="0.96554571390151978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" red="0.42120856046676636" green="0.96630567312240601" blue="0.96055155992507935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" red="0.4212085605" green="0.96630567310000004" blue="0.96055155989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fakeEventDots" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="pj0-bS-IVK" id="txj-U7-5ma"/>
                                     <outlet property="delegate" destination="pj0-bS-IVK" id="adh-Fy-jXc"/>
@@ -261,6 +274,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Tfz-ap-zQF"/>
         <segue reference="iAA-zH-bFj"/>
-        <segue reference="72G-Ts-Usv"/>
+        <segue reference="eBV-OC-xmm"/>
     </inferredMetricsTieBreakers>
 </document>
