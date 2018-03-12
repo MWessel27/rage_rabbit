@@ -45,7 +45,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVC-TA-DTX">
-                                <rect key="frame" x="162" y="138" width="90.333333333333314" height="42"/>
+                                <rect key="frame" x="162.33333333333334" y="138" width="90.333333333333343" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -65,6 +65,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dayLbl" destination="eVC-TA-DTX" id="nna-uU-E2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +98,7 @@
                                         <rect key="frame" x="143.33333333333334" y="0.0" width="103.33333333333334" height="102"/>
                                         <state key="normal" image="daily"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="eBV-OC-xmm"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="todaySegue" id="eBV-OC-xmm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3i-md-bIq" userLabel="calBtn">
@@ -272,8 +275,8 @@
         <image name="list-select" width="90" height="102"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tfz-ap-zQF"/>
-        <segue reference="iAA-zH-bFj"/>
+        <segue reference="3Bt-zF-Tgh"/>
+        <segue reference="RkT-lV-77m"/>
         <segue reference="eBV-OC-xmm"/>
     </inferredMetricsTieBreakers>
 </document>
