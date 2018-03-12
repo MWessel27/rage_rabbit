@@ -19,7 +19,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prodTbl.dataSource = self as? UITableViewDataSource;
+        prodTbl.dataSource = self as UITableViewDataSource;
         
         if(products.count == 0){
             prodTbl.isHidden = true;
