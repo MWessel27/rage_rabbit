@@ -50,34 +50,69 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmk-JI-75f" userLabel="dayBtn">
-                                <rect key="frame" x="142" y="198" width="131" height="77"/>
-                                <state key="normal" image="sun"/>
-                                <connections>
-                                    <action selector="dayBtnTped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Elw-7N-h1s"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiX-IX-bYG" userLabel="nightBtn">
-                                <rect key="frame" x="169" y="635" width="77" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="moon"/>
-                                <connections>
-                                    <action selector="nightBtnTped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZR-PK-qZH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="375" translatesAutoresizingMaskIntoConstraints="NO" id="lqW-C6-OHi">
+                                <rect key="frame" x="168.66666666666666" y="188" width="77" height="537"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmk-JI-75f" userLabel="dayBtn">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="81"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="A6j-V4-BYP"/>
+                                            <constraint firstAttribute="width" constant="77" id="k9x-Kg-Fea"/>
+                                        </constraints>
+                                        <state key="normal" image="sun"/>
+                                        <connections>
+                                            <action selector="dayBtnTped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Elw-7N-h1s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiX-IX-bYG" userLabel="nightBtn">
+                                        <rect key="frame" x="0.0" y="456" width="77" height="81"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="77" id="Uui-fT-viy"/>
+                                            <constraint firstAttribute="height" constant="81" id="sVl-Ys-LDv"/>
+                                        </constraints>
+                                        <state key="normal" image="moon"/>
+                                        <connections>
+                                            <action selector="nightBtnTped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZR-PK-qZH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nmk-JI-75f" firstAttribute="top" secondItem="lqW-C6-OHi" secondAttribute="top" id="BCP-mU-vEc"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-rv-NaZ">
+                                <rect key="frame" x="20" y="282" width="374" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="Mc4-n5-A6A">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mc4-n5-A6A" id="ZsF-Qo-786">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9xL-2s-lAB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0pr-ue-QDx"/>
+                            <constraint firstItem="pJE-rv-NaZ" firstAttribute="top" secondItem="eVC-TA-DTX" secondAttribute="bottom" constant="102" id="3kT-zc-7YH"/>
+                            <constraint firstItem="lqW-C6-OHi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="45E-j3-s9C"/>
                             <constraint firstItem="Ne6-gM-Q5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="6Ln-mI-Cps"/>
+                            <constraint firstItem="lqW-C6-OHi" firstAttribute="top" secondItem="eVC-TA-DTX" secondAttribute="bottom" constant="8" id="7s7-Pz-gng"/>
                             <constraint firstItem="9xL-2s-lAB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7tp-bd-JN0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pJE-rv-NaZ" secondAttribute="trailing" constant="20" id="Cr6-Sh-4LJ"/>
                             <constraint firstItem="eVC-TA-DTX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CtF-4g-6O2"/>
-                            <constraint firstItem="Nmk-JI-75f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="IwK-DY-ZRB"/>
+                            <constraint firstItem="pJE-rv-NaZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FH7-XO-FGx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ne6-gM-Q5P" secondAttribute="trailing" constant="12" id="LZ3-uW-2wh"/>
+                            <constraint firstItem="lqW-C6-OHi" firstAttribute="top" secondItem="eVC-TA-DTX" secondAttribute="bottom" constant="8" id="NQl-V0-ccg"/>
                             <constraint firstItem="9xL-2s-lAB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QtY-yN-osG"/>
-                            <constraint firstItem="Nmk-JI-75f" firstAttribute="top" secondItem="eVC-TA-DTX" secondAttribute="bottom" constant="18" id="Xu4-j3-1Fr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nmk-JI-75f" secondAttribute="trailing" constant="141" id="g81-re-gEW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pJE-rv-NaZ" secondAttribute="bottom" constant="179" id="XuH-ma-Rz6"/>
+                            <constraint firstItem="eVC-TA-DTX" firstAttribute="top" secondItem="Ne6-gM-Q5P" secondAttribute="bottom" constant="16" id="hP9-gp-TUD"/>
                             <constraint firstItem="eVC-TA-DTX" firstAttribute="top" secondItem="Ne6-gM-Q5P" secondAttribute="bottom" constant="16" id="jNp-Rg-12X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lqW-C6-OHi" secondAttribute="bottom" constant="11" id="kmY-dq-WU5"/>
                             <constraint firstItem="9xL-2s-lAB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rET-bW-vYh"/>
                             <constraint firstItem="Ne6-gM-Q5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w5o-l7-3E1"/>
                         </constraints>
@@ -87,11 +122,12 @@
                         <outlet property="dayBtn" destination="Nmk-JI-75f" id="U6i-4b-D6c"/>
                         <outlet property="dayLbl" destination="eVC-TA-DTX" id="nna-uU-E2K"/>
                         <outlet property="nightBtn" destination="CiX-IX-bYG" id="Byf-W4-PVb"/>
+                        <outlet property="prodListTable" destination="pJE-rv-NaZ" id="Z0g-J5-gxn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.19999999999999" y="132.26600985221674"/>
+            <point key="canvasLocation" x="134.78260869565219" y="132.06521739130434"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="TUz-5Z-9RJ">
@@ -299,6 +335,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="3Bt-zF-Tgh"/>
         <segue reference="RkT-lV-77m"/>
-        <segue reference="eBV-OC-xmm"/>
+        <segue reference="72G-Ts-Usv"/>
     </inferredMetricsTieBreakers>
 </document>
