@@ -47,6 +47,9 @@ class ListViewController: UIViewController, UITableViewDataSource {
         if editingStyle == .delete {
             self.products.remove(at: indexPath.row);
             tableView.deleteRows(at: [indexPath], with: .fade);
+            if(self.products.count == 0){
+                self.prodTbl.isHidden = true;
+            }
         }
     }
     
