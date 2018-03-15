@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55D253AE2059EB77005B5CA7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D253AD2059EB77005B5CA7 /* Product.swift */; };
 		CB672AD72052D2E80035D5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB672AD62052D2E80035D5C6 /* AppDelegate.swift */; };
 		CB672AD92052D2E80035D5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB672AD82052D2E80035D5C6 /* ViewController.swift */; };
 		CB672ADC2052D2E80035D5C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB672ADA2052D2E80035D5C6 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55D253AD2059EB77005B5CA7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CB672AD32052D2E80035D5C6 /* rage_rabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rage_rabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB672AD62052D2E80035D5C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB672AD82052D2E80035D5C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				CB6911E32053237B00E43180 /* CalendarViewController.swift */,
 				CBCC4A872056BDF500DDAC58 /* rage_rabbit-Bridging-Header.h */,
 				CB6911E5205323C000E43180 /* ListViewController.swift */,
+				55D253AD2059EB77005B5CA7 /* Product.swift */,
 				CB672ADA2052D2E80035D5C6 /* Main.storyboard */,
 				CB672AE02052D2E80035D5C6 /* Assets.xcassets */,
 				CB672AE22052D2E80035D5C6 /* LaunchScreen.storyboard */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6760012056CBF6009A4A46 /* FSCalendar.m in Sources */,
+				55D253AE2059EB77005B5CA7 /* Product.swift in Sources */,
 				CB6760032056CBF6009A4A46 /* FSCalendarCollectionViewLayout.m in Sources */,
 				CB6760042056CBF6009A4A46 /* FSCalendarWeekdayView.m in Sources */,
 				CB6760062056CBF6009A4A46 /* FSCalendarDelegationFactory.m in Sources */,
